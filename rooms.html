@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooms at Grand Stay Hotel | Deluxe, Executive and Suite</title>
+  <meta name="description" content="Explore room types at Grand Stay Hotel including Deluxe Room, Executive Room, and Family Suite with price details." />
+  <meta name="keywords" content="hotel rooms, deluxe room, suite room, Grand Stay Hotel, room prices, hotel booking" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">Grand Stay Hotel</div>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <nav class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html" class="active">Rooms</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner small-banner">
+    <div class="overlay">
+      <div class="container">
+        <h1>Our Rooms</h1>
+        <p>Choose the perfect room for your comfortable stay.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rooms-section container">
+    <h2>Available Rooms</h2>
+    <div class="card-grid">
+      <div class="card room-card">
+        <img src="images/room1.jpg" alt="Deluxe room with king size bed and stylish interior" />
+        <h3>Deluxe Room</h3>
+        <p>Comfortable room with king-size bed, Wi-Fi, TV, and air conditioning.</p>
+        <p><strong>Price:</strong> ₹3,500 / night</p>
+      </div>
+      <div class="card room-card">
+        <img src="images/room2.jpg" alt="Executive room with modern design and seating area" />
+        <h3>Executive Room</h3>
+        <p>Spacious room ideal for business and leisure travelers with premium amenities.</p>
+        <p><strong>Price:</strong> ₹5,000 / night</p>
+      </div>
+      <div class="card room-card">
+        <img src="images/room3.jpg" alt="Family suite with elegant decor and multiple beds" />
+        <h3>Family Suite</h3>
+        <p>Large suite designed for families with extra space, seating area, and comfort.</p>
+        <p><strong>Price:</strong> ₹7,500 / night</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="calculator container">
+    <h2>Booking Cost Calculator</h2>
+    <form id="priceForm">
+      <label for="roomType">Select Room:</label>
+      <select id="roomType">
+        <option value="3500">Deluxe Room - ₹3,500</option>
+        <option value="5000">Executive Room - ₹5,000</option>
+        <option value="7500">Family Suite - ₹7,500</option>
+      </select>
+
+      <label for="nights">Number of Nights:</label>
+      <input type="number" id="nights" min="1" value="1" />
+
+      <button type="button" class="btn" onclick="calculatePrice()">Calculate Cost</button>
+      <p id="totalCost"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Grand Stay Hotel</h3>
+        <p>A sample hotel website created using HTML, CSS, and JavaScript for frontend practice.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a> | <a href="gallery.html">Gallery</a> | <a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: info@grandstayhotel.com</p>
+        <p>Phone: +91-9876543210</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Grand Stay Hotel. Designed for MANTRA Summer School.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
